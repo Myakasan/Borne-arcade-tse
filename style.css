@@ -1,0 +1,12 @@
+.test{
+  height: 100%;
+  background-color: crimson;
+}
+
+h1{
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  font-family: arial;
+}
