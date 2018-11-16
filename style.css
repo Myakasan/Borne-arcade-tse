@@ -1,12 +1,18 @@
-.test{
-  height: 100%;
-  background-color: crimson;
+/*Positionnement du background, la forme de la borne*/
+body {
+  background-image: url('img/borne.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: black;
 }
 
-h1{
-  font-size: 30px;
-  text-align: center;
-  padding-top: 20%;
-  padding-bottom: 20%;
-  font-family: arial;
+.screen {
+  background-color: lightcoral;
+  margin: 0 auto;
+  margin-top: 19%;
+  height: 100px;
+  width: 459px;
 }
+
+/*Positionnement terminé*/
