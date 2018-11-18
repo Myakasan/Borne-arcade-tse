@@ -1,18 +1,39 @@
 /*Positionnement du background, la forme de la borne*/
-body {
-  background-image: url('img/borne.png');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.arcade-full-page{
+  background-image: url('img/borne.png'), url('img/neon.png');
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
-  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+
 }
+
+
 
 .screen {
   background-color: lightcoral;
   margin: 0 auto;
-  margin-top: 19%;
-  height: 100px;
-  width: 459px;
+  margin-top: 11em;
+  height: 45%;
+  width: 35%;
+  border-radius: 32px;
+  background-attachment: fixed;
+
+
 }
+/*Fonctionne en plein écran sur dell...
+si ne fonctionne pas sur video proj et pas de meilleure solution alors :
+background-color : black et donner une taille a .arcade-full-page. et la ça arretera de casser les couilles.
+*/
+
 
 /*Positionnement terminé*/
