@@ -91,7 +91,7 @@ GameCore.prototype.drawSplashScreen = function(paddle)
     if(paddle != null)
     {
         var victoryString = (!paddle.isRightPaddle) ? "Player one wins!" : "Player two wins!";
-        this.ctx.fillText(victoryString, 300, 300);
+        this.ctx.fillText(victoryString, 300, 350);
     }
 
     this.ctx.fillText("Please press Spacebar to start.", 5, 250);
