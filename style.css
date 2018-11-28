@@ -91,7 +91,7 @@ body {
     width: 800px;
     font-size: 0;
     margin: auto;
-    border-bottom: solid black .5px;
+    border-bottom: solid white .5px;
 }
 
 #pong-gameboard{
@@ -103,11 +103,8 @@ body {
     display: inline-block;
     white-space: nowrap;
     font-size: 20px;
-<<<<<<< Updated upstream
     margin-top: 10px;
-=======
 
->>>>>>> Stashed changes
     text-align: center;
 }
 
