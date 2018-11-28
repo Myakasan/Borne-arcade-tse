@@ -5,16 +5,32 @@
   <meta charset="utf-8">
   <title>Do it Machine EA</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" async charset="utf-8"></script>
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
   <div id="container">
-  <div id="monitor">
-    <div id="monitorscreen"></div>
+    <div id="monitor">
+      <div id="monitorscreen">
+        <div class="pong-container">
+          <canvas id="pong-gameboard"></canvas>
+          <div class="playerone-container">
+            <span>W</span>
+            <span>S</span>
+          </div>
+          <div class="playerone-container">
+            <span>UP</span>
+            <span>DOWN</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 
+
+  <script src="script.js" charset="utf-8"></script>
+
+</body>
 
 </html>
