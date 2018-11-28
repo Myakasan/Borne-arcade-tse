@@ -1,5 +1,6 @@
 body {
-  background-color: #222;
+  background-image: url(./img/neon.png);
+  background-size: cover;
 }
 
 #container {
@@ -104,10 +105,6 @@ body {
     white-space: nowrap;
     font-size: 20px;
     margin-top: 10px;
-<<<<<<< HEAD
-=======
-
->>>>>>> master
     text-align: center;
 }
 
