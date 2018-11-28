@@ -91,6 +91,7 @@ body {
     width: 800px;
     font-size: 0;
     margin: auto;
+    border-bottom: solid black .5px;
 }
 
 #pong-gameboard{
@@ -102,7 +103,7 @@ body {
     display: inline-block;
     white-space: nowrap;
     font-size: 20px;
-    
+    margin-top: 10px;
     text-align: center;
 }
 
