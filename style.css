@@ -86,19 +86,19 @@ body {
 }
 
 .pong-container{
-    margin-left: auto;
-    margin-right: auto;
-    height: 700px;
-    width: 1000px;
+
+    height: 450px;
+    width: 800px;
     font-size: 0;
+    margin: auto;
 }
 
 #pong-gameboard{
-    background: #000;
+    background: #grey;
 }
 
 .playerone-container{
-    width: 50%;
+    width: 20%;
     display: inline-block;
     white-space: nowrap;
     font-size: 20px;

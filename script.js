@@ -32,8 +32,8 @@ function GameCore()
     this.splashScreenIsVisible = true;
     this.canvas = document.getElementById("pong-gameboard");
     this.ctx = this.canvas.getContext("2d");
-    this.canvas.height = 700;
-    this.canvas.width = 1000;
+    this.canvas.height = 450;
+    this.canvas.width = 800;
     this.ctx.height = this.canvas.height;
     this.ctx.width = this.canvas.width;
 }
