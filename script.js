@@ -94,7 +94,7 @@ GameCore.prototype.drawSplashScreen = function(paddle)
         this.ctx.fillText(victoryString, 300, 300);
     }
 
-    this.ctx.fillText("Please press Spacebar to start.", 120, 450);
+    this.ctx.fillText("Please press Spacebar to start.", 5, 250);
     this.ctx.save();
 
     leftPaddle.score = 0;
