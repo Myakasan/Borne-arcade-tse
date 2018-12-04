@@ -114,7 +114,8 @@ body {
 }
 
 .playerone-container > span{
-    border: 1px solid #65e91e;
+    color: rgb(255, 255, 255);
+    border: 2px solid #e4bdff;
     padding: 10px;
     border-radius: 5px;
     width: 10px;

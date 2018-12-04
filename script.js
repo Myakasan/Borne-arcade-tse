@@ -107,11 +107,11 @@ GameCore.prototype.drawBoard = function()
     this.ctx.setLineDash([25,20]);
     this.ctx.moveTo(this.ctx.width/2, 0);
     this.ctx.lineTo(this.ctx.width/2, this.ctx.height);
-    this.ctx.strokeStyle = "#CCC";
+    this.ctx.strokeStyle = "#ffffff";
     this.ctx.lineWidth = 0;
     this.ctx.stroke();
 
-    this.ctx.fillStyle = '#CCC';
+    this.ctx.fillStyle = '#ffffff';
     this.ctx.font = "45px Orbitron";
     this.ctx.fillText(leftPaddle.score, (this.ctx.width/2)/2, 75);
     this.ctx.fillText(rightPaddle.score, (this.ctx.width/2)*1.5, 75);
