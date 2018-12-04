@@ -108,7 +108,7 @@ GameCore.prototype.drawBoard = function()
     this.ctx.moveTo(this.ctx.width/2, 0);
     this.ctx.lineTo(this.ctx.width/2, this.ctx.height);
     this.ctx.strokeStyle = "#CCC";
-    this.ctx.lineWidth = 4;
+    this.ctx.lineWidth = 0;
     this.ctx.stroke();
 
     this.ctx.fillStyle = '#CCC';
@@ -124,7 +124,7 @@ GameCore.prototype.checkPaddles = function(puck, leftPaddle, rightPaddle)
         if((puck.xPos > rightPaddle.xPos - rightPaddle.width) && (puck.xPos < rightPaddle.xPos + rightPaddle.width))
         {
             var intersectionNormalization = (((rightPaddle.yPos + (rightPaddle.height/2)) - puck.yPos) / (rightPaddle.height/2));
-            puck.ballSpeedConst += 0.5;
+            puck.ballSpeedConst += 1;
             puck.xVel = (puck.ballSpeedConst * Math.cos(intersectionNormalization));
             puck.yVel = (puck.ballSpeedConst * Math.sin(intersectionNormalization));
         }
@@ -140,7 +140,7 @@ GameCore.prototype.checkPaddles = function(puck, leftPaddle, rightPaddle)
         if((puck.xPos < leftPaddle.xPos + leftPaddle.width) && (puck.xPos > leftPaddle.xPos - leftPaddle.width))
         {
             var intersectionNormalization = (((leftPaddle.yPos + (leftPaddle.height/2)) - puck.yPos) / (leftPaddle.height/2)) *-1;
-            puck.ballSpeedConst += 0.5;
+            puck.ballSpeedConst += 1;
             puck.xVel = (puck.ballSpeedConst *- Math.cos(intersectionNormalization));
             puck.yVel = (puck.ballSpeedConst *- Math.sin(intersectionNormalization));
         }
@@ -195,12 +195,12 @@ Paddle.prototype.move = function(movementDirection)
 {
     if(movementDirection == GameDirection.UP && this.yPos > 0 + (this.height * 0.3))
     {
-        this.yPos -= 7;
+        this.yPos -= 10;
     }
 
     if(movementDirection == GameDirection.DOWN && this.yPos < gameCore.ctx.height - (this.height / 0.7))
     {
-        this.yPos += 7;
+        this.yPos += 10;
     }
 }
 
