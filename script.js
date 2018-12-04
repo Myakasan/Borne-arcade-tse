@@ -193,12 +193,12 @@ function Paddle(right)
 
 Paddle.prototype.move = function(movementDirection)
 {
-    if(movementDirection == GameDirection.UP && this.yPos > 0 + (this.height * 0.3))
+    if(movementDirection == GameDirection.UP && this.yPos > 0 + (this.height * 0))
     {
         this.yPos -= 10;
     }
 
-    if(movementDirection == GameDirection.DOWN && this.yPos < gameCore.ctx.height - (this.height / 0.7))
+    if(movementDirection == GameDirection.DOWN && this.yPos < gameCore.ctx.height - (this.height / 1))
     {
         this.yPos += 10;
     }
